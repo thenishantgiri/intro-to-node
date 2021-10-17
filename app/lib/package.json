@@ -1,0 +1,14 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Nishant Kumar Giri",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^27.2.5"
+  }
+}

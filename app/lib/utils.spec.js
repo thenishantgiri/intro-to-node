@@ -17,3 +17,22 @@ describe("mapObjectToArray()", () => {
     expect(mockCb).toBeCalledTimes(2);
   });
 });
+
+describe("getNewUser()", () => {
+  test("it gets user", async () => {
+    const user = await getNewUser(1);
+
+    expect(user).toBeTruthy();
+    expect(user.id).toBe(1);
+  });
+
+  test("no user found", async () => {
+    expect.assertions(1);
+
+    try {
+      const user = await getNewUser(69);
+    } catch (err) {
+      expect(err).toBeTruthy();
+    }
+  });
+});

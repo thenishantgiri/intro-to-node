@@ -33,6 +33,6 @@ app.get("/todo/:id", (req, res) => {
   });
 });
 
-app.listen(8000, () => {
-  console.log("server is listening on http://localhost:8000");
+app.listen(process.env.PORT, () => {
+  console.log("server is listening");
 });
